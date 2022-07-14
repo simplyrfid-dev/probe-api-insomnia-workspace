@@ -568,17 +568,11 @@
       "created": 1612282153472,
       "name": "Base Environment",
       "data": {
-        "qa": "https://bane.simplyrfid.com/api",
-        "staging": "https://gideon.simplyrfid.com/api",
-        "prod": "https://probe.simplyrfid.com/api",
-        "prod_new": "https://www.fsgaims.com/api"
+        "qa": "https://bane.simplyrfid.com/api"
       },
       "dataPropertyOrder": {
         "&": [
-          "qa",
-          "staging",
-          "prod",
-          "prod_new"
+          "qa"
         ]
       },
       "color": null,
@@ -593,50 +587,6 @@
       "created": 1612282153474,
       "name": "Default Jar",
       "cookies": [
-        {
-          "key": "Probe",
-          "value": "f1529bbafeb011eb955c5543efd0db80",
-          "domain": "probe.simplyrfid.com",
-          "path": "/",
-          "hostOnly": true,
-          "pathIsDefault": true,
-          "creation": "2021-05-21T03:56:11.209Z",
-          "lastAccessed": "2021-08-16T16:42:28.172Z",
-          "id": "05424789415360021"
-        },
-        {
-          "key": "Nuc",
-          "value": "4a2dcd1c2d6f11ec9bb61f0903ccaad1",
-          "domain": "192.168.0.101",
-          "path": "/",
-          "hostOnly": true,
-          "pathIsDefault": true,
-          "creation": "2021-10-15T04:20:03.861Z",
-          "lastAccessed": "2021-10-15T04:20:54.967Z",
-          "id": "6183001720891397"
-        },
-        {
-          "key": "Probe",
-          "value": "94a2212e7f6611ecbb790fa31f3d13ca",
-          "domain": "gideon.simplyrfid.com",
-          "path": "/",
-          "hostOnly": true,
-          "pathIsDefault": true,
-          "creation": "2022-01-27T11:39:39.485Z",
-          "lastAccessed": "2022-01-27T11:45:09.860Z",
-          "id": "8644572863822777"
-        },
-        {
-          "key": "Probe",
-          "value": "f7f44108d77c11eca78a0b77a548a362",
-          "domain": "www.fsgaims.com",
-          "path": "/",
-          "hostOnly": true,
-          "pathIsDefault": true,
-          "creation": "2022-05-19T14:07:07.923Z",
-          "lastAccessed": "2022-05-19T14:07:07.923Z",
-          "id": "12369005227809349"
-        },
         {
           "key": "Probe",
           "value": "a89b62a8f6c611ecaa09ed8070ae719d",
