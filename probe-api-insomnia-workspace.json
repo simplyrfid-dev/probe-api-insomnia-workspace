@@ -1,1 +1,678 @@
-{"_type":"export","__export_format":4,"__export_date":"2022-07-14T11:18:42.360Z","__export_source":"insomnia.desktop.app:v2022.4.2","resources":[{"_id":"req_8c6c6ed2f62342f290decbe0658c584f","parentId":"fld_e2427fc6b600468eb7401481189d69e3","modified":1657797315901,"created":1612282984986,"url":"{{ _.qa }}","name":"create-order","description":"","method":"POST","body":{"mimeType":"application/json","text":"{\n\t\"op\": \"create-order\",\n\t\"upc\": \"376455123123131\", \n\t\"store_id\": 1, \n\t\"vendor_id\": \"riserva\",\n\t\"lab_id\": \"riservalab\", \n\t\"customer_name\": \"John De Leon\", \n\t\"customer_email\": \"john.deleon@simplyrfid.com\"\n}"},"parameters":[],"headers":[{"name":"Content-Type","value":"application/json","id":"pair_0aaccdd37cc241a9b29be09cfd8a5676"},{"name":"Probe","value":"c6eee0ae657211eb920a1d021543f62b","description":"","id":"pair_75fa443b982b4c1db5dfbc615d8a56d6","disabled":true}],"authentication":{},"metaSortKey":-1612282984986,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"fld_e2427fc6b600468eb7401481189d69e3","parentId":"wrk_7cf49127e71e4138acf0325be7db8397","modified":1657797428491,"created":1612282168398,"name":"AIMS - Probe","description":"","environment":{},"environmentPropertyOrder":{},"metaSortKey":-1634526087164,"_type":"request_group"},{"_id":"wrk_7cf49127e71e4138acf0325be7db8397","parentId":null,"modified":1612282153435,"created":1612282153435,"name":"Probe","description":"","scope":"collection","_type":"workspace"},{"_id":"req_ffb2172a5e8e47679c2f584140e13945","parentId":"fld_e2427fc6b600468eb7401481189d69e3","modified":1657797316566,"created":1619788929188,"url":"{{ _.qa }}","name":"create-crystal-order","description":"","method":"POST","body":{"mimeType":"application/json","text":"{\n    \"op\": \"create-crystal-order\",\n    \"rfid\": \"FD010000000000A00000D10B\",\n    \"zone\": \"Lakeline Vision Source\",\n    \"upc\": \"780073297322\",\n    \"crystal_id\": \"00001136\",\n    \"sales_rep\": \"John\",\n    \"lab_prescription\": {\n        \"pat_name\": \"John Test 123\",\n\t\t\t\t\"pat_email\": \"john.deleon@simplyrfid.com\",\t\t\t\n        \"order_type\": \"Remake:Progressive upgrade\",\t\t\t\n        \"right_design\": \"Progressive\",\n        \"right_sphere\": \"+2.00\",\n        \"right_cylinder\": \"-0.75\",\n        \"right_axis\": \"122\",\n        \"right_prism1\": \"12\",\n        \"right_prismdir1\": \"13\",\n        \"right_prism2\": \"15\",\n        \"right_prismdir2\": \"0\",\n        \"right_add\": \"+2.50\",\n        \"right_seg_ht\": \"1\",\n        \"right_pd_dist\": \"2\",\n        \"right_pd_near\": \"3\",\n        \"right_material\": \"Polycarbonate PAL Pkg\",\n        \"right_panto\": \"51\",\t\t\t\t\n\t\t\t\t\"right_vertex\": \"\",\n        \"right_mpd\": \"34.5\",\n        \"right_oc\": \"23\",\n        \"left_design\": \"Progressive\",\n        \"left_sphere\": \"+4.75\",\n        \"left_cylinder\": \"-0.75\",\n        \"left_axis\": \"044\",\n        \"left_prism1\": \"55\",\n        \"left_prismdir1\": \"1\",\n        \"left_prism2\": \"21\",\n        \"left_prismdir2\": \"0\",\n        \"left_add\": \"+2.50\",\n        \"left_seg_ht\": \"-3.5\",\n        \"left_pd_dist\": \"55\",\n        \"left_pd_near\": \"45\",\n        \"left_material\": \"Polycarbonate PAL Pkg\",\n        \"left_panto\": \"65\",\t\t\t\t\n\t\t\t \t\"left_vertex\": \"\",\n        \"left_mpd\": \"34.5\",\n        \"left_oc\": \"23\",\n        \"frame_type\": \"Plastic\",\n        \"frame_edge\": \"15\",\n        \"frame_name\": \"EB32610P\",\n        \"frame_mfg\": \"Match\",\n        \"frame_color\": \"Brown\",\t\n\t\t\t\t\"frame_collections\": \"Eddie Bauer\",\n        \"frame_style\": \"\",\n        \"frame_wrap\": \"\",\n        \"eye_size\": \"57\",\n        \"dbl\": \"16\",\n        \"box_a\": \"57\",\n        \"box_b\": \"38\",\n        \"box_ed\": \"59\",\n        \"instructions\": \"lens were single vision...Needed to be Progressives\",\t\t\t\n\t\t\t\t\"templs\": \"140\",\t\n        \"auth_no\": \"\",        \n        \"special_order\": \"0\",\n        \"lens_description\": \"PAL - Digitally Enhanced Progressive\",\n        \"head_pos\": \"\",\n        \"head_eye_co\": \"\",\n        \"stab_co\": \"\",\n        \"prog_len\": \"\",\n        \"initials\": \"$0.00\",\n        \"dom_eye\": \"\",\n        \"dom_hand\": \"\",\n        \"working_dist\": \"\",\n        \"right_eye_rot\": \"\",\t\t\t\n        \"left_eye_rot\": \"\",\t\t\n\t\t\t\"filter\": \"\",\n        \"service1\": \"\",\n        \"service2\": \"\",\n        \"service3\": \"Polar C Grey Poly MF/PAL Pkg Only\",\n        \"service4\": \"\",\n        \"due_date\": \"10/19/2020\"\n    }\n}"},"parameters":[],"headers":[{"name":"Content-Type","value":"application/json","id":"pair_0aaccdd37cc241a9b29be09cfd8a5676"}],"authentication":{},"metaSortKey":-1612282895346,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_450b223606a54a11813c3241da92a2fb","parentId":"fld_e2427fc6b600468eb7401481189d69e3","modified":1657797316997,"created":1643266878003,"url":"{{ _.qa }}","name":"create-crystal-order-updated","description":"","method":"POST","body":{"mimeType":"application/json","text":"{\n    \"supplier_name\": \"PECH OPTICAL CORPORATION - Sioux City, IA\",\n    \"lens_design\": \"Plastic Hi Index\",\n    \"lens_material\": \"Varilux X Fit Technology 1.67 - Clear\",\n    \"vw_orderid\": \"SPABCDE\",\n    \"coatings\": [\n        \"Crizal Avance UV\",\n        \"Right Hand  Right Eye  40cm\"\n    ],\n    \"op\": \"create-crystal-order\",\n    \"rfid\": \"FD010000000000A00000D10B\",\n    \"zone\": \"Lakeline Vision Source\",\n    \"upc\": \"97963898577\",\n    \"crystal_id\": \"00001153\",\n    \"sales_rep\": \"Farrell-Menchaca, Bethany\",\n    \"lab_prescription\": {\n        \"orderid\": \"142279011\",\n        \"pat_name\": \"Ingram, Paul\",\n        \"order_type\": \"Sale - Deluxe\",\n        \"right_design\": \"\",\n        \"right_sphere\": \"\",\n        \"right_cylinder\": \"\",\n        \"right_axis\": \"\",\n        \"right_prism1\": \"\",\n        \"right_prismdir1\": \"\",\n        \"right_prism2\": \"\",\n        \"right_prismdir2\": \"\",\n        \"right_add\": \"\",\n        \"right_seg_ht\": \"\",\n        \"right_pd_dist\": \"\",\n        \"right_pd_near\": \"\",\n        \"right_material\": \"\",\n        \"right_panto\": \"\",\n        \"left_design\": \"Progressive\",\n        \"left_sphere\": \"+2.25\",\n        \"left_cylinder\": \"-0.75\",\n        \"left_axis\": \"095\",\n        \"left_prism1\": \"\",\n        \"left_prismdir1\": \"\",\n        \"left_prism2\": \"\",\n        \"left_prismdir2\": \"\",\n        \"left_add\": \"+2.50\",\n        \"left_seg_ht\": \"20.8\",\n        \"left_pd_dist\": \"\",\n        \"left_pd_near\": \"\",\n        \"left_material\": \"Varilux X Fit Technology 1.67 - Clear\",\n        \"left_panto\": \"3.2\",\n        \"frame_type\": \"metal\",\n        \"frame_edge\": \"\",\n        \"frame_name\": \"C3023\",\n        \"frame_mfg\": \"Marchon\",\n        \"frame_color\": \"Black-002\",\n        \"eye_size\": \"55\",\n        \"dbl\": \"18.00\",\n        \"box_a\": \"55\",\n        \"box_b\": \"38\",\n        \"box_ed\": \"60\",\n        \"filter\": \"\",\n        \"service1\": \"Crizal Avance UV\",\n        \"service2\": \"\",\n        \"service3\": \"\",\n        \"service4\": \"Right Hand  Right Eye  40cm\",\n        \"due_date\": \"2/13/2022\",\n        \"instructions\": \"pals\",\n        \"templs\": \"145\",\n        \"auth_no\": \"52808847\",\n        \"right_vertex\": \"\",\n        \"right_mpd\": \"\",\n        \"right_oc\": \"\",\n        \"right_eye_rot\": \"\",\n        \"left_vertex\": \"4.1\",\n        \"left_mpd\": \"30.5\",\n        \"left_oc\": \"\",\n        \"left_eye_rot\": \"\",\n        \"frame_collections\": \"Columbia\",\n        \"frame_style\": \"\",\n        \"special_order\": \"1\",\n        \"lens_description\": \"Plastic Hi Index\",\n        \"frame_wrap\": \"0\",\n        \"head_pos\": \"\",\n        \"head_eye_co\": \"\",\n        \"stab_co\": \"\",\n        \"prog_len\": \"\",\n        \"initials\": \"\",\n        \"dom_eye\": \"\",\n        \"dom_hand\": \"\",\n        \"working_dist\": \"\"\n    }\n}"},"parameters":[],"headers":[{"name":"Content-Type","value":"application/json","id":"pair_0aaccdd37cc241a9b29be09cfd8a5676"}],"authentication":{},"metaSortKey":-1612282872936,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_d9447f9b6add430fb0e54a2bcd7f890c","parentId":"fld_e2427fc6b600468eb7401481189d69e3","modified":1657797317397,"created":1619788936153,"url":"{{ _.qa }}","name":"delete-crystal-order","description":"","method":"POST","body":{"mimeType":"application/json","text":"{\n\t\"op\": \"delete-crystal-order\",\n\t\"crystal_unique_identifier\": \"100155\",\n\t\"rfid\": \"FD010000000000A000012F6E\"\n}"},"parameters":[],"headers":[{"name":"Content-Type","value":"application/json","id":"pair_0aaccdd37cc241a9b29be09cfd8a5676"},{"name":"Probe","value":"51bfe3f4c93c11eb920a1d021543f62b","description":"","id":"pair_75fa443b982b4c1db5dfbc615d8a56d6","disabled":false}],"authentication":{},"metaSortKey":-1612282850526,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_89ceee14d3404b9db30c07408c1be85c","parentId":"fld_e2427fc6b600468eb7401481189d69e3","modified":1657797320020,"created":1612342991650,"url":"{{ _.qa }}","name":"get-orders-count","description":"","method":"POST","body":{"mimeType":"application/json","text":"{\n\t\"op\": \"get-orders-count\",\n\t\"lab\": \"riservalab\"\n}"},"parameters":[],"headers":[{"name":"Content-Type","value":"application/json","id":"pair_0aaccdd37cc241a9b29be09cfd8a5676"},{"name":"Probe","value":"b474476665fe11eb920a1d021543f62b","description":"","id":"pair_75fa443b982b4c1db5dfbc615d8a56d6","disabled":true}],"authentication":{},"metaSortKey":-1612282805706,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_5d476e18aacb422fab6cff58cd796f11","parentId":"fld_e2427fc6b600468eb7401481189d69e3","modified":1657797321200,"created":1612283418383,"url":"{{ _.qa }}","name":"get-order","description":"","method":"POST","body":{"mimeType":"application/json","text":"{\n\t\"op\": \"get-order\",\n\t\"id\": 57\n}"},"parameters":[],"headers":[{"name":"Content-Type","value":"application/json","id":"pair_0aaccdd37cc241a9b29be09cfd8a5676"},{"name":"Probe","value":"c6eee0ae657211eb920a1d021543f62b","description":"","id":"pair_75fa443b982b4c1db5dfbc615d8a56d6","disabled":true}],"authentication":{},"metaSortKey":-1612282626426,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_e59f98381daf471fbebd39b7e03d3fe4","parentId":"fld_e2427fc6b600468eb7401481189d69e3","modified":1657797321645,"created":1612282267866,"url":"{{ _.qa }}","name":"login","description":"","method":"POST","body":{"mimeType":"application/json","text":"{\n\t\"op\": \"user-get\",\n\t\"userId\": \"admin\",\n\t\"password\": \"ins3cur3\"\n}\n"},"parameters":[],"headers":[{"name":"Content-Type","value":"application/json","id":"pair_8904ba8b87dc4c298bfc288b92d21358","disabled":true}],"authentication":{},"metaSortKey":-1612282267866,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_c73fb7b0d7f04894aeddc0b0a6ce9ac1","parentId":"fld_e2427fc6b600468eb7401481189d69e3","modified":1657797322862,"created":1624439874640,"url":"{{ _.qa }}","name":"get-logs","description":"","method":"POST","body":{"mimeType":"application/json","text":"{\n\t\"op\": \"get-logs\",\n\t\"log_file\": \"api\"\n}\n"},"parameters":[],"headers":[{"name":"Content-Type","value":"application/json","id":"pair_8904ba8b87dc4c298bfc288b92d21358","disabled":true},{"name":"Probe","value":"f85bd138d40311eb920a1d021543f62b","description":"","id":"pair_1d16e474fd18491c895817e910f31392"}],"authentication":{},"metaSortKey":-1612282267816,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_bebf0789760349ae9bf33315f03be696","parentId":"fld_e2427fc6b600468eb7401481189d69e3","modified":1657797323290,"created":1654536695863,"url":"{{ _.qa }}","name":"get-items","description":"","method":"POST","body":{"mimeType":"application/json","text":"{\n\t\"op\": \"get-items\",\n\t\"userId\": \"inventory@probe.com\",\n\t\"password\": \"NqTeRMw1#95q3\",\n\t\"limit\": 10\n}\n"},"parameters":[],"headers":[{"name":"Content-Type","value":"application/json","id":"pair_8904ba8b87dc4c298bfc288b92d21358","disabled":true}],"authentication":{},"metaSortKey":-1612282267791,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_16e2f11598dd47098b145a8cb4d75c70","parentId":"fld_e2427fc6b600468eb7401481189d69e3","modified":1657797292166,"created":1654539539974,"url":"{{ _.qa }}","name":"user-list","description":"","method":"POST","body":{"mimeType":"application/json","text":"{\n\t\"op\": \"user-list\"\n}\n"},"parameters":[],"headers":[{"name":"Content-Type","value":"application/json","id":"pair_8904ba8b87dc4c298bfc288b92d21358","disabled":true}],"authentication":{},"metaSortKey":-1612282267778.5,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_03f6dfe238bd45059ddde1d83fbcb2f2","parentId":"fld_e2427fc6b600468eb7401481189d69e3","modified":1657797323625,"created":1654539760569,"url":"{{ _.qa }}","name":"get-store-id","description":"","method":"POST","body":{"mimeType":"application/json","text":"{\n\t\"op\": \"get-store-id\",\n\t\"zone\": \"Lakeline Vision Source\",\n\t\"userId\": \"inventory@probe.com\",\n\t\"password\": \"NqTeRMw1#95q3\"\n}\n"},"parameters":[],"headers":[{"name":"Content-Type","value":"application/json","id":"pair_8904ba8b87dc4c298bfc288b92d21358","disabled":true}],"authentication":{},"metaSortKey":-1612282267772.25,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_3e0b54ece3e14a1a85d28ed362af3ecd","parentId":"fld_e2427fc6b600468eb7401481189d69e3","modified":1657797325766,"created":1654540021303,"url":"{{ _.qa }}","name":"get-orders","description":"","method":"POST","body":{"mimeType":"application/json","text":"{\n\t\"op\": \"get-orders\"\n}\n"},"parameters":[],"headers":[{"name":"Content-Type","value":"application/json","id":"pair_8904ba8b87dc4c298bfc288b92d21358","disabled":true}],"authentication":{},"metaSortKey":-1612282267769.125,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_afa3ae5fb75a4fd69206048f30e31d4b","parentId":"fld_e2427fc6b600468eb7401481189d69e3","modified":1657797325798,"created":1656409287740,"url":"{{ _.qa }}","name":"driver","description":"","method":"POST","body":{"mimeType":"application/json","text":"{\n\t\"op\": \"driver\",\n\t\"name\": \"inventory\",\n\t\"call\": \"get-zone-id-from-name\",\n\t\"zone_name\": \"Crockett\"\n}\n"},"parameters":[],"headers":[{"name":"Content-Type","value":"application/json","id":"pair_8904ba8b87dc4c298bfc288b92d21358","disabled":true}],"authentication":{},"metaSortKey":-1612282267767.5625,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_cfe1c38c43754144abace87c4f7c1fbe","parentId":"fld_e2427fc6b600468eb7401481189d69e3","modified":1657797299724,"created":1625668547995,"url":"{{ _.qa }}","name":"get-min-inventory-count","description":"","method":"POST","body":{"mimeType":"application/json","text":"{\n\t\"op\": \"get-min-inventory-count\",\n\t\"vendor_id\": 22\n}\n"},"parameters":[],"headers":[{"name":"Content-Type","value":"application/json","id":"pair_8904ba8b87dc4c298bfc288b92d21358","disabled":true},{"name":"Probe","value":"f85bd138d40311eb920a1d021543f62b","description":"","id":"pair_1d16e474fd18491c895817e910f31392"}],"authentication":{},"metaSortKey":-1612282267766,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_08629f6ff6c2410087f9142d7eae22b6","parentId":"fld_e2427fc6b600468eb7401481189d69e3","modified":1657797403178,"created":1625670397375,"url":"{{ _.qa }}","name":"update-min-inventory-count","description":"","method":"POST","body":{"mimeType":"application/json","text":"{\n\t\"op\": \"update-min-inventory-count\",\n\t\"vendor_id\": 21,\n\t\"minInventoryCount\": 15\n}\n"},"parameters":[],"headers":[{"name":"Content-Type","value":"application/json","id":"pair_8904ba8b87dc4c298bfc288b92d21358","disabled":true},{"name":"Probe","value":"f85bd138d40311eb920a1d021543f62b","description":"","id":"pair_1d16e474fd18491c895817e910f31392"}],"authentication":{},"metaSortKey":-1612282267716,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"env_8ac23bfee794e83f1db9b66da9399015e105f181","parentId":"wrk_7cf49127e71e4138acf0325be7db8397","modified":1657797308068,"created":1612282153472,"name":"Base Environment","data":{"qa":"https://bane.simplyrfid.com/api","staging":"https://gideon.simplyrfid.com/api","prod":"https://probe.simplyrfid.com/api","prod_new":"https://www.fsgaims.com/api"},"dataPropertyOrder":{"&":["qa","staging","prod","prod_new"]},"color":null,"isPrivate":false,"metaSortKey":1612282153472,"_type":"environment"},{"_id":"jar_8ac23bfee794e83f1db9b66da9399015e105f181","parentId":"wrk_7cf49127e71e4138acf0325be7db8397","modified":1656409363585,"created":1612282153474,"name":"Default Jar","cookies":[{"key":"Probe","value":"f1529bbafeb011eb955c5543efd0db80","domain":"probe.simplyrfid.com","path":"/","hostOnly":true,"pathIsDefault":true,"creation":"2021-05-21T03:56:11.209Z","lastAccessed":"2021-08-16T16:42:28.172Z","id":"05424789415360021"},{"key":"Nuc","value":"4a2dcd1c2d6f11ec9bb61f0903ccaad1","domain":"192.168.0.101","path":"/","hostOnly":true,"pathIsDefault":true,"creation":"2021-10-15T04:20:03.861Z","lastAccessed":"2021-10-15T04:20:54.967Z","id":"6183001720891397"},{"key":"Probe","value":"94a2212e7f6611ecbb790fa31f3d13ca","domain":"gideon.simplyrfid.com","path":"/","hostOnly":true,"pathIsDefault":true,"creation":"2022-01-27T11:39:39.485Z","lastAccessed":"2022-01-27T11:45:09.860Z","id":"8644572863822777"},{"key":"Probe","value":"f7f44108d77c11eca78a0b77a548a362","domain":"www.fsgaims.com","path":"/","hostOnly":true,"pathIsDefault":true,"creation":"2022-05-19T14:07:07.923Z","lastAccessed":"2022-05-19T14:07:07.923Z","id":"12369005227809349"},{"key":"Probe","value":"a89b62a8f6c611ecaa09ed8070ae719d","domain":"bane.simplyrfid.com","path":"/","hostOnly":true,"pathIsDefault":true,"creation":"2022-06-28T09:42:43.585Z","lastAccessed":"2022-06-28T09:42:43.585Z","id":"20995688035497095"}],"_type":"cookie_jar"},{"_id":"spc_bafd30005c244e3f9dda0a068ac7683e","parentId":"wrk_7cf49127e71e4138acf0325be7db8397","modified":1612282153439,"created":1612282153439,"fileName":"Probe","contents":"","contentType":"yaml","_type":"api_spec"},{"_id":"env_9a0a54c640e5433c8f2adf3edb93777b","parentId":"env_8ac23bfee794e83f1db9b66da9399015e105f181","modified":1657797432706,"created":1643180904022,"name":"New Environment","data":{},"dataPropertyOrder":{},"color":null,"isPrivate":false,"metaSortKey":1643180904022,"_type":"environment"}]}
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2022-07-14T11:18:42.360Z",
+  "__export_source": "insomnia.desktop.app:v2022.4.2",
+  "resources": [
+    {
+      "_id": "req_8c6c6ed2f62342f290decbe0658c584f",
+      "parentId": "fld_e2427fc6b600468eb7401481189d69e3",
+      "modified": 1657797315901,
+      "created": 1612282984986,
+      "url": "{{ _.qa }}",
+      "name": "create-order",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"op\": \"create-order\",\n\t\"upc\": \"376455123123131\", \n\t\"store_id\": 1, \n\t\"vendor_id\": \"riserva\",\n\t\"lab_id\": \"riservalab\", \n\t\"customer_name\": \"John De Leon\", \n\t\"customer_email\": \"john.deleon@simplyrfid.com\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_0aaccdd37cc241a9b29be09cfd8a5676"
+        },
+        {
+          "name": "Probe",
+          "value": "c6eee0ae657211eb920a1d021543f62b",
+          "description": "",
+          "id": "pair_75fa443b982b4c1db5dfbc615d8a56d6",
+          "disabled": true
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1612282984986,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_e2427fc6b600468eb7401481189d69e3",
+      "parentId": "wrk_7cf49127e71e4138acf0325be7db8397",
+      "modified": 1657797428491,
+      "created": 1612282168398,
+      "name": "AIMS - Probe",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": {},
+      "metaSortKey": -1634526087164,
+      "_type": "request_group"
+    },
+    {
+      "_id": "wrk_7cf49127e71e4138acf0325be7db8397",
+      "parentId": null,
+      "modified": 1612282153435,
+      "created": 1612282153435,
+      "name": "Probe",
+      "description": "",
+      "scope": "collection",
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_ffb2172a5e8e47679c2f584140e13945",
+      "parentId": "fld_e2427fc6b600468eb7401481189d69e3",
+      "modified": 1657797316566,
+      "created": 1619788929188,
+      "url": "{{ _.qa }}",
+      "name": "create-crystal-order",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n    \"op\": \"create-crystal-order\",\n    \"rfid\": \"FD010000000000A00000D10B\",\n    \"zone\": \"Lakeline Vision Source\",\n    \"upc\": \"780073297322\",\n    \"crystal_id\": \"00001136\",\n    \"sales_rep\": \"John\",\n    \"lab_prescription\": {\n        \"pat_name\": \"John Test 123\",\n\t\t\t\t\"pat_email\": \"john.deleon@simplyrfid.com\",\t\t\t\n        \"order_type\": \"Remake:Progressive upgrade\",\t\t\t\n        \"right_design\": \"Progressive\",\n        \"right_sphere\": \"+2.00\",\n        \"right_cylinder\": \"-0.75\",\n        \"right_axis\": \"122\",\n        \"right_prism1\": \"12\",\n        \"right_prismdir1\": \"13\",\n        \"right_prism2\": \"15\",\n        \"right_prismdir2\": \"0\",\n        \"right_add\": \"+2.50\",\n        \"right_seg_ht\": \"1\",\n        \"right_pd_dist\": \"2\",\n        \"right_pd_near\": \"3\",\n        \"right_material\": \"Polycarbonate PAL Pkg\",\n        \"right_panto\": \"51\",\t\t\t\t\n\t\t\t\t\"right_vertex\": \"\",\n        \"right_mpd\": \"34.5\",\n        \"right_oc\": \"23\",\n        \"left_design\": \"Progressive\",\n        \"left_sphere\": \"+4.75\",\n        \"left_cylinder\": \"-0.75\",\n        \"left_axis\": \"044\",\n        \"left_prism1\": \"55\",\n        \"left_prismdir1\": \"1\",\n        \"left_prism2\": \"21\",\n        \"left_prismdir2\": \"0\",\n        \"left_add\": \"+2.50\",\n        \"left_seg_ht\": \"-3.5\",\n        \"left_pd_dist\": \"55\",\n        \"left_pd_near\": \"45\",\n        \"left_material\": \"Polycarbonate PAL Pkg\",\n        \"left_panto\": \"65\",\t\t\t\t\n\t\t\t \t\"left_vertex\": \"\",\n        \"left_mpd\": \"34.5\",\n        \"left_oc\": \"23\",\n        \"frame_type\": \"Plastic\",\n        \"frame_edge\": \"15\",\n        \"frame_name\": \"EB32610P\",\n        \"frame_mfg\": \"Match\",\n        \"frame_color\": \"Brown\",\t\n\t\t\t\t\"frame_collections\": \"Eddie Bauer\",\n        \"frame_style\": \"\",\n        \"frame_wrap\": \"\",\n        \"eye_size\": \"57\",\n        \"dbl\": \"16\",\n        \"box_a\": \"57\",\n        \"box_b\": \"38\",\n        \"box_ed\": \"59\",\n        \"instructions\": \"lens were single vision...Needed to be Progressives\",\t\t\t\n\t\t\t\t\"templs\": \"140\",\t\n        \"auth_no\": \"\",        \n        \"special_order\": \"0\",\n        \"lens_description\": \"PAL - Digitally Enhanced Progressive\",\n        \"head_pos\": \"\",\n        \"head_eye_co\": \"\",\n        \"stab_co\": \"\",\n        \"prog_len\": \"\",\n        \"initials\": \"$0.00\",\n        \"dom_eye\": \"\",\n        \"dom_hand\": \"\",\n        \"working_dist\": \"\",\n        \"right_eye_rot\": \"\",\t\t\t\n        \"left_eye_rot\": \"\",\t\t\n\t\t\t\"filter\": \"\",\n        \"service1\": \"\",\n        \"service2\": \"\",\n        \"service3\": \"Polar C Grey Poly MF/PAL Pkg Only\",\n        \"service4\": \"\",\n        \"due_date\": \"10/19/2020\"\n    }\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_0aaccdd37cc241a9b29be09cfd8a5676"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1612282895346,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_450b223606a54a11813c3241da92a2fb",
+      "parentId": "fld_e2427fc6b600468eb7401481189d69e3",
+      "modified": 1657797316997,
+      "created": 1643266878003,
+      "url": "{{ _.qa }}",
+      "name": "create-crystal-order-updated",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n    \"supplier_name\": \"PECH OPTICAL CORPORATION - Sioux City, IA\",\n    \"lens_design\": \"Plastic Hi Index\",\n    \"lens_material\": \"Varilux X Fit Technology 1.67 - Clear\",\n    \"vw_orderid\": \"SPABCDE\",\n    \"coatings\": [\n        \"Crizal Avance UV\",\n        \"Right Hand  Right Eye  40cm\"\n    ],\n    \"op\": \"create-crystal-order\",\n    \"rfid\": \"FD010000000000A00000D10B\",\n    \"zone\": \"Lakeline Vision Source\",\n    \"upc\": \"97963898577\",\n    \"crystal_id\": \"00001153\",\n    \"sales_rep\": \"Farrell-Menchaca, Bethany\",\n    \"lab_prescription\": {\n        \"orderid\": \"142279011\",\n        \"pat_name\": \"Ingram, Paul\",\n        \"order_type\": \"Sale - Deluxe\",\n        \"right_design\": \"\",\n        \"right_sphere\": \"\",\n        \"right_cylinder\": \"\",\n        \"right_axis\": \"\",\n        \"right_prism1\": \"\",\n        \"right_prismdir1\": \"\",\n        \"right_prism2\": \"\",\n        \"right_prismdir2\": \"\",\n        \"right_add\": \"\",\n        \"right_seg_ht\": \"\",\n        \"right_pd_dist\": \"\",\n        \"right_pd_near\": \"\",\n        \"right_material\": \"\",\n        \"right_panto\": \"\",\n        \"left_design\": \"Progressive\",\n        \"left_sphere\": \"+2.25\",\n        \"left_cylinder\": \"-0.75\",\n        \"left_axis\": \"095\",\n        \"left_prism1\": \"\",\n        \"left_prismdir1\": \"\",\n        \"left_prism2\": \"\",\n        \"left_prismdir2\": \"\",\n        \"left_add\": \"+2.50\",\n        \"left_seg_ht\": \"20.8\",\n        \"left_pd_dist\": \"\",\n        \"left_pd_near\": \"\",\n        \"left_material\": \"Varilux X Fit Technology 1.67 - Clear\",\n        \"left_panto\": \"3.2\",\n        \"frame_type\": \"metal\",\n        \"frame_edge\": \"\",\n        \"frame_name\": \"C3023\",\n        \"frame_mfg\": \"Marchon\",\n        \"frame_color\": \"Black-002\",\n        \"eye_size\": \"55\",\n        \"dbl\": \"18.00\",\n        \"box_a\": \"55\",\n        \"box_b\": \"38\",\n        \"box_ed\": \"60\",\n        \"filter\": \"\",\n        \"service1\": \"Crizal Avance UV\",\n        \"service2\": \"\",\n        \"service3\": \"\",\n        \"service4\": \"Right Hand  Right Eye  40cm\",\n        \"due_date\": \"2/13/2022\",\n        \"instructions\": \"pals\",\n        \"templs\": \"145\",\n        \"auth_no\": \"52808847\",\n        \"right_vertex\": \"\",\n        \"right_mpd\": \"\",\n        \"right_oc\": \"\",\n        \"right_eye_rot\": \"\",\n        \"left_vertex\": \"4.1\",\n        \"left_mpd\": \"30.5\",\n        \"left_oc\": \"\",\n        \"left_eye_rot\": \"\",\n        \"frame_collections\": \"Columbia\",\n        \"frame_style\": \"\",\n        \"special_order\": \"1\",\n        \"lens_description\": \"Plastic Hi Index\",\n        \"frame_wrap\": \"0\",\n        \"head_pos\": \"\",\n        \"head_eye_co\": \"\",\n        \"stab_co\": \"\",\n        \"prog_len\": \"\",\n        \"initials\": \"\",\n        \"dom_eye\": \"\",\n        \"dom_hand\": \"\",\n        \"working_dist\": \"\"\n    }\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_0aaccdd37cc241a9b29be09cfd8a5676"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1612282872936,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_d9447f9b6add430fb0e54a2bcd7f890c",
+      "parentId": "fld_e2427fc6b600468eb7401481189d69e3",
+      "modified": 1657797317397,
+      "created": 1619788936153,
+      "url": "{{ _.qa }}",
+      "name": "delete-crystal-order",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"op\": \"delete-crystal-order\",\n\t\"crystal_unique_identifier\": \"100155\",\n\t\"rfid\": \"FD010000000000A000012F6E\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_0aaccdd37cc241a9b29be09cfd8a5676"
+        },
+        {
+          "name": "Probe",
+          "value": "51bfe3f4c93c11eb920a1d021543f62b",
+          "description": "",
+          "id": "pair_75fa443b982b4c1db5dfbc615d8a56d6",
+          "disabled": false
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1612282850526,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_89ceee14d3404b9db30c07408c1be85c",
+      "parentId": "fld_e2427fc6b600468eb7401481189d69e3",
+      "modified": 1657797320020,
+      "created": 1612342991650,
+      "url": "{{ _.qa }}",
+      "name": "get-orders-count",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"op\": \"get-orders-count\",\n\t\"lab\": \"riservalab\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_0aaccdd37cc241a9b29be09cfd8a5676"
+        },
+        {
+          "name": "Probe",
+          "value": "b474476665fe11eb920a1d021543f62b",
+          "description": "",
+          "id": "pair_75fa443b982b4c1db5dfbc615d8a56d6",
+          "disabled": true
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1612282805706,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_5d476e18aacb422fab6cff58cd796f11",
+      "parentId": "fld_e2427fc6b600468eb7401481189d69e3",
+      "modified": 1657797321200,
+      "created": 1612283418383,
+      "url": "{{ _.qa }}",
+      "name": "get-order",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"op\": \"get-order\",\n\t\"id\": 57\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_0aaccdd37cc241a9b29be09cfd8a5676"
+        },
+        {
+          "name": "Probe",
+          "value": "c6eee0ae657211eb920a1d021543f62b",
+          "description": "",
+          "id": "pair_75fa443b982b4c1db5dfbc615d8a56d6",
+          "disabled": true
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1612282626426,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_e59f98381daf471fbebd39b7e03d3fe4",
+      "parentId": "fld_e2427fc6b600468eb7401481189d69e3",
+      "modified": 1657797321645,
+      "created": 1612282267866,
+      "url": "{{ _.qa }}",
+      "name": "login",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"op\": \"user-get\",\n\t\"userId\": \"admin\",\n\t\"password\": \"ins3cur3\"\n}\n"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_8904ba8b87dc4c298bfc288b92d21358",
+          "disabled": true
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1612282267866,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_c73fb7b0d7f04894aeddc0b0a6ce9ac1",
+      "parentId": "fld_e2427fc6b600468eb7401481189d69e3",
+      "modified": 1657797322862,
+      "created": 1624439874640,
+      "url": "{{ _.qa }}",
+      "name": "get-logs",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"op\": \"get-logs\",\n\t\"log_file\": \"api\"\n}\n"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_8904ba8b87dc4c298bfc288b92d21358",
+          "disabled": true
+        },
+        {
+          "name": "Probe",
+          "value": "f85bd138d40311eb920a1d021543f62b",
+          "description": "",
+          "id": "pair_1d16e474fd18491c895817e910f31392"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1612282267816,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_bebf0789760349ae9bf33315f03be696",
+      "parentId": "fld_e2427fc6b600468eb7401481189d69e3",
+      "modified": 1657797323290,
+      "created": 1654536695863,
+      "url": "{{ _.qa }}",
+      "name": "get-items",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"op\": \"get-items\",\n\t\"userId\": \"inventory@probe.com\",\n\t\"password\": \"NqTeRMw1#95q3\",\n\t\"limit\": 10\n}\n"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_8904ba8b87dc4c298bfc288b92d21358",
+          "disabled": true
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1612282267791,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_16e2f11598dd47098b145a8cb4d75c70",
+      "parentId": "fld_e2427fc6b600468eb7401481189d69e3",
+      "modified": 1657797292166,
+      "created": 1654539539974,
+      "url": "{{ _.qa }}",
+      "name": "user-list",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"op\": \"user-list\"\n}\n"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_8904ba8b87dc4c298bfc288b92d21358",
+          "disabled": true
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1612282267778.5,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_03f6dfe238bd45059ddde1d83fbcb2f2",
+      "parentId": "fld_e2427fc6b600468eb7401481189d69e3",
+      "modified": 1657797323625,
+      "created": 1654539760569,
+      "url": "{{ _.qa }}",
+      "name": "get-store-id",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"op\": \"get-store-id\",\n\t\"zone\": \"Lakeline Vision Source\",\n\t\"userId\": \"inventory@probe.com\",\n\t\"password\": \"NqTeRMw1#95q3\"\n}\n"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_8904ba8b87dc4c298bfc288b92d21358",
+          "disabled": true
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1612282267772.25,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_3e0b54ece3e14a1a85d28ed362af3ecd",
+      "parentId": "fld_e2427fc6b600468eb7401481189d69e3",
+      "modified": 1657797325766,
+      "created": 1654540021303,
+      "url": "{{ _.qa }}",
+      "name": "get-orders",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"op\": \"get-orders\"\n}\n"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_8904ba8b87dc4c298bfc288b92d21358",
+          "disabled": true
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1612282267769.125,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_afa3ae5fb75a4fd69206048f30e31d4b",
+      "parentId": "fld_e2427fc6b600468eb7401481189d69e3",
+      "modified": 1657797325798,
+      "created": 1656409287740,
+      "url": "{{ _.qa }}",
+      "name": "driver",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"op\": \"driver\",\n\t\"name\": \"inventory\",\n\t\"call\": \"get-zone-id-from-name\",\n\t\"zone_name\": \"Crockett\"\n}\n"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_8904ba8b87dc4c298bfc288b92d21358",
+          "disabled": true
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1612282267767.5625,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_cfe1c38c43754144abace87c4f7c1fbe",
+      "parentId": "fld_e2427fc6b600468eb7401481189d69e3",
+      "modified": 1657797299724,
+      "created": 1625668547995,
+      "url": "{{ _.qa }}",
+      "name": "get-min-inventory-count",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"op\": \"get-min-inventory-count\",\n\t\"vendor_id\": 22\n}\n"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_8904ba8b87dc4c298bfc288b92d21358",
+          "disabled": true
+        },
+        {
+          "name": "Probe",
+          "value": "f85bd138d40311eb920a1d021543f62b",
+          "description": "",
+          "id": "pair_1d16e474fd18491c895817e910f31392"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1612282267766,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_08629f6ff6c2410087f9142d7eae22b6",
+      "parentId": "fld_e2427fc6b600468eb7401481189d69e3",
+      "modified": 1657797403178,
+      "created": 1625670397375,
+      "url": "{{ _.qa }}",
+      "name": "update-min-inventory-count",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"op\": \"update-min-inventory-count\",\n\t\"vendor_id\": 21,\n\t\"minInventoryCount\": 15\n}\n"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_8904ba8b87dc4c298bfc288b92d21358",
+          "disabled": true
+        },
+        {
+          "name": "Probe",
+          "value": "f85bd138d40311eb920a1d021543f62b",
+          "description": "",
+          "id": "pair_1d16e474fd18491c895817e910f31392"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1612282267716,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "env_8ac23bfee794e83f1db9b66da9399015e105f181",
+      "parentId": "wrk_7cf49127e71e4138acf0325be7db8397",
+      "modified": 1657797308068,
+      "created": 1612282153472,
+      "name": "Base Environment",
+      "data": {
+        "qa": "https://bane.simplyrfid.com/api",
+        "staging": "https://gideon.simplyrfid.com/api",
+        "prod": "https://probe.simplyrfid.com/api",
+        "prod_new": "https://www.fsgaims.com/api"
+      },
+      "dataPropertyOrder": {
+        "&": [
+          "qa",
+          "staging",
+          "prod",
+          "prod_new"
+        ]
+      },
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1612282153472,
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_8ac23bfee794e83f1db9b66da9399015e105f181",
+      "parentId": "wrk_7cf49127e71e4138acf0325be7db8397",
+      "modified": 1656409363585,
+      "created": 1612282153474,
+      "name": "Default Jar",
+      "cookies": [
+        {
+          "key": "Probe",
+          "value": "f1529bbafeb011eb955c5543efd0db80",
+          "domain": "probe.simplyrfid.com",
+          "path": "/",
+          "hostOnly": true,
+          "pathIsDefault": true,
+          "creation": "2021-05-21T03:56:11.209Z",
+          "lastAccessed": "2021-08-16T16:42:28.172Z",
+          "id": "05424789415360021"
+        },
+        {
+          "key": "Nuc",
+          "value": "4a2dcd1c2d6f11ec9bb61f0903ccaad1",
+          "domain": "192.168.0.101",
+          "path": "/",
+          "hostOnly": true,
+          "pathIsDefault": true,
+          "creation": "2021-10-15T04:20:03.861Z",
+          "lastAccessed": "2021-10-15T04:20:54.967Z",
+          "id": "6183001720891397"
+        },
+        {
+          "key": "Probe",
+          "value": "94a2212e7f6611ecbb790fa31f3d13ca",
+          "domain": "gideon.simplyrfid.com",
+          "path": "/",
+          "hostOnly": true,
+          "pathIsDefault": true,
+          "creation": "2022-01-27T11:39:39.485Z",
+          "lastAccessed": "2022-01-27T11:45:09.860Z",
+          "id": "8644572863822777"
+        },
+        {
+          "key": "Probe",
+          "value": "f7f44108d77c11eca78a0b77a548a362",
+          "domain": "www.fsgaims.com",
+          "path": "/",
+          "hostOnly": true,
+          "pathIsDefault": true,
+          "creation": "2022-05-19T14:07:07.923Z",
+          "lastAccessed": "2022-05-19T14:07:07.923Z",
+          "id": "12369005227809349"
+        },
+        {
+          "key": "Probe",
+          "value": "a89b62a8f6c611ecaa09ed8070ae719d",
+          "domain": "bane.simplyrfid.com",
+          "path": "/",
+          "hostOnly": true,
+          "pathIsDefault": true,
+          "creation": "2022-06-28T09:42:43.585Z",
+          "lastAccessed": "2022-06-28T09:42:43.585Z",
+          "id": "20995688035497095"
+        }
+      ],
+      "_type": "cookie_jar"
+    },
+    {
+      "_id": "spc_bafd30005c244e3f9dda0a068ac7683e",
+      "parentId": "wrk_7cf49127e71e4138acf0325be7db8397",
+      "modified": 1612282153439,
+      "created": 1612282153439,
+      "fileName": "Probe",
+      "contents": "",
+      "contentType": "yaml",
+      "_type": "api_spec"
+    },
+    {
+      "_id": "env_9a0a54c640e5433c8f2adf3edb93777b",
+      "parentId": "env_8ac23bfee794e83f1db9b66da9399015e105f181",
+      "modified": 1657797432706,
+      "created": 1643180904022,
+      "name": "New Environment",
+      "data": {},
+      "dataPropertyOrder": {},
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1643180904022,
+      "_type": "environment"
+    }
+  ]
+}
