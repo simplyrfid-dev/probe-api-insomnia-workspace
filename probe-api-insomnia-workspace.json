@@ -257,7 +257,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"op\": \"user-get\",\n\t\"userId\": \"admin\",\n\t\"password\": \"ins3cur3\"\n}\n"
+        "text": "{\n\t\"op\": \"user-get\",\n\t\"userId\": \"\",\n\t\"password\": \"\"\n}\n"
       },
       "parameters": [],
       "headers": [
@@ -329,7 +329,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"op\": \"get-items\",\n\t\"userId\": \"inventory@probe.com\",\n\t\"password\": \"NqTeRMw1#95q3\",\n\t\"limit\": 10\n}\n"
+        "text": "{\n\t\"op\": \"get-items\",\n\t\"userId\": \"\",\n\t\"password\": \"\",\n\t\"limit\": 10\n}\n"
       },
       "parameters": [],
       "headers": [
@@ -395,7 +395,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"op\": \"get-store-id\",\n\t\"zone\": \"Lakeline Vision Source\",\n\t\"userId\": \"inventory@probe.com\",\n\t\"password\": \"NqTeRMw1#95q3\"\n}\n"
+        "text": "{\n\t\"op\": \"get-store-id\",\n\t\"zone\": \"Lakeline Vision Source\",\n\t\"userId\": \"\",\n\t\"password\": \"\"\n}\n"
       },
       "parameters": [],
       "headers": [
